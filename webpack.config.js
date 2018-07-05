@@ -23,6 +23,9 @@ module.exports = {
 	plugins: [new HtmlPlugin()],
 
 	resolve: {
+		alias: {
+			mobx: resolve(__dirname, 'node_modules/mobx/lib/mobx.es6.js')
+		},
 		extensions: ['.js', '.jsx', '.json']
 	}
 };
